@@ -11,6 +11,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :posts, except: [:create]
-  post "posts/commit", to: "posts#create", as: :create_post
+  resources :posts
 end

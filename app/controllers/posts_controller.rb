@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   def edit
   end
 
-  # POST /posts/commit
+  # POST /posts
   def create
     @post = Post.new(post_params)
 
@@ -54,3 +54,4 @@ class PostsController < ApplicationController
   def post_params
     params.expect(post: [ :title, :content ])
   end
+end
